@@ -2,10 +2,9 @@
 
 export default (state = {}, action) => {
     switch(action.type) {
-        case "SOMETHING" :
+        case "FORMS" :
             return action.payload;
         default:
             return state;
     }
 }
-
