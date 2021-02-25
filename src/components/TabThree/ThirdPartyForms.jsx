@@ -39,8 +39,9 @@ const ThirdPartyForms = (props) => {
                             placeholder="Adress"
                             style={{marginBottom: '20px'}}/>
                     </div>
-                    <button type="submit" className="right">
+                    <button type="submit" className="btn waves-effect waves-light right">
                         Submit
+                        <i className="material-icons right">send</i>
                     </button>
                 </div>
             </form>
