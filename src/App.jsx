@@ -1,5 +1,7 @@
 import React from 'react';
-import Header from "./components/Header";
+import Header from './components/Header';
+import Employees from './components/Tables/Employees';
+import LaborQueries from './components/Reports/LaborQueries';
 
 
 class App extends React.Component {
@@ -7,6 +9,8 @@ class App extends React.Component {
         return (
             <div>
                 <Header/>
+                <Employees/>
+                <LaborQueries/>
             </div>
         )
     }
