@@ -4,7 +4,7 @@
 export default (props) => {
     return (
         <div>
-            Employees Table
+            Member Forms
         </div>
     )
 };

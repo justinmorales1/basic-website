@@ -1,9 +1,14 @@
+import React from 'react';
+import { connect } from 'react-redux'
 
-
-export default () => {
-    return (
-        <div>
-            Landing Page
-        </div>
-    )
+class LandingPage extends React.Component {
+    render() {
+        return (
+            <div className="card darken-1">
+                Landing Page
+            </div>
+        )
+    }
 }
+
+export default connect()(LandingPage);

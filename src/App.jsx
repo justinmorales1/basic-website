@@ -11,12 +11,13 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
+
                 <BrowserRouter>
-                    <LandingPage exact path='/'/>
-                    <EmployeeForms exact path='/employees-forms'/>
-                    <MemberForms exact path='/member-forms'/>
-                    <ThirdPartyForms exact path='/third-party-forms'/>
+                    <Header/>
+                    <Route exact path='/' component={LandingPage}/>
+                    <Route exact path='/employees-forms' component={EmployeeForms}/>
+                    <Route exact path='/member-forms' component={MemberForms}/>
+                    <Route exact path='/third-party-forms' component={ThirdPartyForms}/>
                 </BrowserRouter >
             </div>
         )

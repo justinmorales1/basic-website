@@ -7,11 +7,11 @@ class Header extends React.Component {
             <div>
                 <nav>
                     <div className="nav-wrapper">
-                        <a href="#" className="brand-logo"> BWA - BasicWebApp </a>
+                        <Link to='/' className="brand-logo"> BWA - BasicWebApp </Link>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><a >TabOne</a></li>
-                            <li><a >TabTwo</a></li>
-                            <li><a >TabThree</a></li>
+                            <li><Link to='/employees-forms'>Employee Forms</Link></li>
+                            <li><Link to='/third-party-forms'>Third Party Forms</Link></li>
+                            <li><Link to='/member-forms'>Member Forms</Link></li>
                         </ul>
                     </div>
                 </nav>

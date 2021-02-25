@@ -2,7 +2,7 @@
 export default () => {
     return (
         <div>
-            Labor Queries
+            Employee Forms
         </div>
     )
 }
