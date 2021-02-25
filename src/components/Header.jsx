@@ -6,11 +6,11 @@ class Header extends React.Component {
             <div>
                 <nav>
                     <div className="nav-wrapper">
-                        <a href="#" className="brand-logo"> Nocona </a>
+                        <a href="#" className="brand-logo"> BWA - BasicWebApp </a>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><a >Tables</a></li>
-                            <li><a >Reports</a></li>
-                            <li><a >Other</a></li>
+                            <li><a >TabOne</a></li>
+                            <li><a >TabTwo</a></li>
+                            <li><a >TabThree</a></li>
                         </ul>
                     </div>
                 </nav>

@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## What is this project for?
+This project is a standard Web App template that uses React, Redux,
+React Router, Redux Form, and Google Oauth.
+
+The intention for this project is to be able to copy it as a boiler plate
+for you own code.
+
+In the project directory, you can run:
+
 ## Available Scripts
 
 In the project directory, you can run:

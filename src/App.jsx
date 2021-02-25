@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
-import Employees from './components/Tables/Employees';
-import LaborQueries from './components/Reports/LaborQueries';
+import Employees from './components/TabTwo/MemberForms';
+import LaborQueries from './components/TabOne/EmployeeForms';
+import ThirdPartyForms from './components/TabThree/ThirdPartyForms';
 
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
                 <Header/>
                 <Employees/>
                 <LaborQueries/>
+                <ThirdPartyForms/>
             </div>
         )
     }
