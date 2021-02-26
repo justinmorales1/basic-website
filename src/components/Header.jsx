@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import GoogleAuth from "./GoogleAuth";
 
 class Header extends React.Component {
     render() {
@@ -13,7 +14,7 @@ class Header extends React.Component {
                             <li><Link to='/third-party-forms'>Third Party Forms</Link></li>
                             <li><Link to='/member-forms'>Member Forms</Link></li>
                             <li>
-                                <Link href="/auth/google"> Login With Google </Link>
+                                <GoogleAuth />
                             </li>
                         </ul>
                     </div>
