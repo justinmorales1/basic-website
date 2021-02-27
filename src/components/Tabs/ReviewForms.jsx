@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {Field, reduxForm} from "redux-form";
+import { submitForm } from '../../actions/submitFormsAction';
 
 const data = [
     {name: 'Twirling Derbishes', employeeId: 1123123234, age: 29},
@@ -24,13 +25,25 @@ class ReviewForms extends React.Component {
         })
     };
 
+    //When you select an option from the select element this will set the input fields to a new value
+    updateFields = (e) =>{
+        const employeeData = JSON.parse(e.target.value);
+
+        this.setState(() => {
+            this.props.change("name", employeeData.name);
+            this.props.change("employeeId", employeeData.employeeId);
+            this.props.change("age", employeeData.age);
+        });
+    };
+
+
     render() {
         const {handleSubmit} = this.props;
         return (
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit((formValues)=> this.props.submitForm(formValues))}>
                     <div className="container">
                         <label> Select A Form </label>
-                        <Field name="formSelect" component="select" className='browser-default'>
+                        <Field name="formSelect" component="select" className='browser-default' onChange={this.updateFields}>
                             <option> Select a form </option>
                             {this.renderList()}
                         </Field>
@@ -83,7 +96,7 @@ const mapStateToProps = (state) => {
     }
 };
 
-ReviewForms = connect(mapStateToProps)(ReviewForms);
+ReviewForms = connect(mapStateToProps,{submitForm})(ReviewForms);
 
 
 export default reduxForm({

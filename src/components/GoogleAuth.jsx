@@ -12,7 +12,6 @@ class GoogleAuth extends React.Component {
             }).then(() => {
                 //Get the gapi auth instance values and set them in this.auth
                 this.auth = window.gapi.auth2.getAuthInstance();
-                console.log('Is User is signed in ', this.auth.currentUser.get())
 
                 //Check if user is signed in or if user is signed out
                 this.onAuthChange(this.auth.isSignedIn.get());
@@ -27,7 +26,6 @@ class GoogleAuth extends React.Component {
 
 
     onAuthChange = (isSignedIn) => {
-        console.log('On auth change', isSignedIn)
         if (isSignedIn) {
             //Set the user id as the payload in the store. We can handle the true or false with static values in the reducer
             this.props.signIn(this.auth.currentUser.get().getId());
@@ -76,7 +74,6 @@ class GoogleAuth extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state.auth.isSignedIn)
     return {
         isSignedIn: state.auth.isSignedIn
     }
