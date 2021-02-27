@@ -13,6 +13,7 @@ class Header extends React.Component {
                             <li><Link to='/employees-forms'>Employee Forms</Link></li>
                             <li><Link to='/third-party-forms'>Third Party Forms</Link></li>
                             <li><Link to='/member-forms'>Member Forms</Link></li>
+                            <li><Link to='/review-forms'>Review Forms</Link></li>
                             <li>
                                 <GoogleAuth />
                             </li>

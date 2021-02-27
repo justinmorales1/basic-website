@@ -19,13 +19,13 @@ const EmployeeForms  = (props) => {
                     />
                 </div>
                 <div>
-                    <label>Email</label>
+                    <label>Employee Id</label>
                     <Field
-                        name="email"
+                        name="employeeId"
                         type="text"
                         component="input"
-                        label="Email"
-                        placeholder="Email"
+                        label="Employee Id"
+                        placeholder="Employee Id"
                         style={{marginBottom: '20px'}}/>
                 </div>
                 <div>
