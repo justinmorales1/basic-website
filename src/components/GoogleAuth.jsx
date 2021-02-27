@@ -1,13 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { signIn, signOut} from "../actions/GoogleAuthActions/googleAuth";
+import {googleAPIKey} from "../config/dev";
+
 
 
 class GoogleAuth extends React.Component {
     componentDidMount() {
         window.gapi.load('client:auth2',()=> {
             window.gapi.client.init({
-                clientId: '967271230354-3l7qnrmc61kl2tn62vik8us0sfuh0ccn.apps.googleusercontent.com',
+                //My googleAPIKey is not because of gitignore. You will need to make your own and place the key here.
+                clientId: googleAPIKey,
                 scope: 'email',
             }).then(() => {
                 //Get the gapi auth instance values and set them in this.auth
