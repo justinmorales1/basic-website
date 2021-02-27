@@ -11,6 +11,11 @@ for you own code.
 
 In the project directory, you can run:
 
+## IMPORTANT NOTES
+In the GoogleAuth component I am using my own google auth api key and
+not including it with gitignore. You will need to get your own api key
+in order to use the sign in and sign out feature. 
+
 ## Available Scripts
 
 In the project directory, you can run:
