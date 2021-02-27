@@ -12,9 +12,15 @@ for you own code.
 In the project directory, you can run:
 
 ## IMPORTANT NOTES
-In the GoogleAuth component I am using my own google auth api key and
+GOOGLE AUTH - In the GoogleAuth component I am using my own google auth api key and
 not including it with gitignore. You will need to get your own api key
 in order to use the sign in and sign out feature. 
+
+RETRIEVE MEMBER FORMS - I am not actually calling a backend service to
+retrieved stored forms. Instead I have an action create with some commneted out
+https requests that also returns the stored data which is an array of objects.
+That action creator gets called in the review forms when the component mounds.
+The data is then retireved from the store to map it out on the screen.
 
 ## Available Scripts
 
