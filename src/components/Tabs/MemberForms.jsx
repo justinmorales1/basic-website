@@ -1,53 +1,17 @@
 import { Field, reduxForm } from 'redux-form'
+import React from 'react';
+import FormFields from "./FormFields";
 
 
 
-const MemberForms =  (props) => {
-    const {handleSubmit} = props;
-    return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <div className="container">
-                    <h2> Member Forms </h2>
-                    <div>
-                        <label>Name</label>
-                        <Field
-                            name="name"
-                            type="text"
-                            component="input"
-                            label="nname"
-                            placeholder=" Name"
-                            style={{marginBottom: '20px'}}
-                        />
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <Field
-                            name="email"
-                            type="text"
-                            component="input"
-                            label="Email"
-                            placeholder="Email"
-                            style={{marginBottom: '20px'}}/>
-                    </div>
-                    <div>
-                        <label>Age</label>
-                        <Field
-                            name="age"
-                            type="text"
-                            component="input"
-                            label="Age"
-                            placeholder="Age"
-                            style={{marginBottom: '20px'}}/>
-                    </div>
-                    <button type="submit" className="btn waves-effect waves-light right">
-                        Submit
-                        <i className="material-icons right">send</i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    )
+class MemberForms extends React.Component {
+    render() {
+        return (
+            <div>
+                <FormFields pageName='Member Forms' name='Member Name'/>
+            </div>
+        )
+    }
 };
 
 export default reduxForm({
