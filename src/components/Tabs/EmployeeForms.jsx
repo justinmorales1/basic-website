@@ -1,4 +1,4 @@
-import { Field, reduxForm } from 'redux-form';
+import { reduxForm } from 'redux-form';
 import React from 'react';
 import FormFields from "./FormFields";
 
