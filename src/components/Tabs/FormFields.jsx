@@ -4,6 +4,12 @@ import {Field} from "redux-form";
 
 const FormFields = (props) => {
     const {handleSubmit} = props;
+
+    //Simple example of sending data back to parent component
+    const sendToParentComponent = (someValue) => {
+        props.getChildValue(someValue)
+    };
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -46,6 +52,10 @@ const FormFields = (props) => {
                     </button>
                 </div>
             </form>
+            <button type="submit" className="btn waves-effect waves-light right" onClick={()=>sendToParentComponent(100)}>
+                Click Me
+                <i className="material-icons right">send</i>
+            </button>
         </div>
     )
 };
